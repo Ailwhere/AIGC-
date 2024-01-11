@@ -1,7 +1,9 @@
 # -*- coding: utf-8 -*-
 import itertools
-from collections import Iterable
-
+try:
+    from collections.abc import Iterable
+except ImportError:
+    from collections import Iterable
 import torch
 
 

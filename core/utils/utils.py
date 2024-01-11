@@ -180,7 +180,7 @@ def prepare_device(rank, device_ids, n_gpu_use, backend, dist_url):
     """
     if n_gpu_use > 1:
         dist.init_process_group(
-            backend=backend, init_method=dist_url, world_size=n_gpu_use, rank=rank
+            backend="gloo", init_method=dist_url, world_size=n_gpu_use, rank=rank
         )
         dist.barrier()
 

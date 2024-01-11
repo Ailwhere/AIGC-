@@ -1,5 +1,5 @@
-data_root: /data/fewshot/miniImageNet--ravi
-image_size: 84
+data_root: ./data/fewshot/dataset_folder #/data/fewshot/miniImageNet--ravi
+image_size: 224
 use_memory: False
 augment: True
 augment_times: 1
